@@ -24,8 +24,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 20rem;
-    width: 25rem;
+    height: 30rem;
+    width: 28rem;
+    gap: 0.1rem;
     padding: 1rem;
     background-color: #588157;
     border: none;
@@ -35,11 +36,15 @@ body {
 .cash input {
     width: 18rem;
     height: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 1rem;
 }
 
 .cash button {
     padding: 0.5rem;
     background-color: #A3B18A;
     border: none;
+    color: white;
     border-radius: 1rem;
 }
