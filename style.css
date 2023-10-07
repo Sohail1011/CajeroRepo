@@ -26,7 +26,6 @@ body {
     align-items: center;
     height: 30rem;
     width: 28rem;
-    gap: 0.1rem;
     padding: 1rem;
     background-color: #588157;
     border: none;
@@ -41,8 +40,9 @@ body {
     padding: 1rem;
 }
 
-.cash button {
-    padding: 0.5rem;
+.cash a {
+    text-decoration: none;
+    padding: 1rem;
     background-color: #A3B18A;
     border: none;
     color: white;

@@ -5,9 +5,9 @@ let cuentas = [
 ]
 
 if (cuentas.saldo > 700) {
-
+    console.log('Saldo Incorrecto');
 } else {
-
+    console.log('Saldo Correcto');
 }
 
 function inspeccionarPassword(b) {
