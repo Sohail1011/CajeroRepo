@@ -9,3 +9,11 @@ if (cuentas.saldo > 700) {
 } else {
 
 }
+
+function inspeccionarPassword(b) {
+    if (b === cuentas.password) {
+
+    } else {
+        document.getElementById(b).innerText = 'Contraseña invalida';
+    }
+}

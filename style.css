@@ -20,6 +20,15 @@ body {
 }
 
 .cash {
-    height: 12rem;
-    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 25rem;
+    padding: 1rem;
+}
+
+.cash input {
+    width: 18rem;
 }
