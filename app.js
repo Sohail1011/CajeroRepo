@@ -13,13 +13,18 @@ let inputPassword = document.getElementById('passwordBank');
 /* let valorPassword = inputPassword.value; */
 
 btnIngreso.addEventListener('click', (e) => {
-    e.preventDefault()
-    cuentas.map((cuenta) => {
+    e.preventDefault();
+    let autenticacion = false;
+
+    cuentas.forEach((cuenta) => {
         if (inputDNI.value == cuenta.DNI && inputPassword.value == cuenta.password) {
-            console.log('Todo bien')
-        } else {
-            pMessage.style.display = 'block';
-            e.preventDefault();
+            autenticacion = true;
         }
     });
+
+    if (autenticacion) {
+        console.log('Todo bien')
+    } else {
+        pMessage.style.display = 'block';
+    }
 });
