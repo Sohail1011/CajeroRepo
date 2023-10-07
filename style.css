@@ -40,11 +40,15 @@ body {
     padding: 1rem;
 }
 
-.cash a {
+.cash button {
     text-decoration: none;
     padding: 1rem;
     background-color: #A3B18A;
     border: none;
     color: white;
     border-radius: 1rem;
+}
+
+.incorrecto {
+    display: none;
 }

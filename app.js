@@ -4,4 +4,21 @@ let cuentas = [
     { nombre: "Maui", saldo: 67, DNI: 2256789, password: '123' }
 ]
 
-const selectDNI = document.getElementById('insertDNI');
+const btnIngreso = document.querySelector('button');
+
+let pMessage = document.getElementById('message');
+let inputDNI = document.getElementById('insertDNI');
+/* let valorDNI = inputDNI.value; */
+let inputPassword = document.getElementById('passwordBank');
+/* let valorPassword = inputPassword.value; */
+
+btnIngreso.addEventListener('click', (e) => {
+    e.preventDefault()
+    cuentas.map((cuenta) => {
+        if (inputDNI.value == cuenta.DNI && inputPassword.value == cuenta.password) {
+            console.log('Todo bien')
+        } else {
+            pMessage.style.display = 'block';
+        }
+    });
+});
