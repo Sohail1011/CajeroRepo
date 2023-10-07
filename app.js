@@ -19,6 +19,7 @@ btnIngreso.addEventListener('click', (e) => {
             console.log('Todo bien')
         } else {
             pMessage.style.display = 'block';
+            e.preventDefault();
         }
     });
 });
