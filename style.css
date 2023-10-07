@@ -27,8 +27,19 @@ body {
     height: 20rem;
     width: 25rem;
     padding: 1rem;
+    background-color: #588157;
+    border: none;
+    border-radius: 1rem;
 }
 
 .cash input {
     width: 18rem;
+    height: 2rem;
+}
+
+.cash button {
+    padding: 0.5rem;
+    background-color: #A3B18A;
+    border: none;
+    border-radius: 1rem;
 }
