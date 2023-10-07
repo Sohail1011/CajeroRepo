@@ -23,6 +23,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 1rem;
     align-items: center;
     height: 30rem;
     width: 28rem;
@@ -51,4 +52,11 @@ body {
 
 .incorrecto {
     display: none;
+}
+
+.menu {
+    display: none;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }

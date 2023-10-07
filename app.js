@@ -11,6 +11,8 @@ let inputDNI = document.getElementById('insertDNI');
 /* let valorDNI = inputDNI.value; */
 let inputPassword = document.getElementById('passwordBank');
 /* let valorPassword = inputPassword.value; */
+let menuDisplay = document.querySelector('.menu');
+let container = document.querySelector('.container');
 
 btnIngreso.addEventListener('click', (e) => {
     e.preventDefault();
@@ -19,6 +21,8 @@ btnIngreso.addEventListener('click', (e) => {
     cuentas.forEach((cuenta) => {
         if (inputDNI.value == cuenta.DNI && inputPassword.value == cuenta.password) {
             autenticacion = true;
+            menuDisplay.style.display = 'flex';
+            container.style.display = 'none';
         }
     });
 
